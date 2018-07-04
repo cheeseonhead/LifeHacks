@@ -9,3 +9,4 @@
 - AppCode
 - Disk Inventory X
 - Spectacle 
+- Unarchiver
