@@ -27,3 +27,24 @@ else
     sed -i.bak -e "1s/^/[${BRANCH}] /" $1
 fi
 ```
+
+## Stop tracking a remote branch without deleting
+You don't have to delete your local branch.
+
+Simply delete your remote tracking branch:
+
+```git branch -d -r origin/<remote branch name>```
+(This will not delete the branch on the remote repo!)
+
+See "Having a hard time understanding git-fetch"
+
+there's no such concept of local tracking branches, only remote tracking branches.
+So origin/master is a remote tracking branch for master in the origin repo
+
+As mentioned in Dobes Vandermeer's answer, you also need to reset the configuration associated to the local branch:
+
+```git config --unset branch.<branch>.remote```
+
+```git config --unset branch.<branch>.merge```
+
+That will make any push/pull completely unaware of origin/<remote branch name>.
