@@ -7,6 +7,11 @@
 git fetch --prune; git branch -vv | grep "\[origin.*: gone\]" | sed 's/.*\[origin\/\(.*\): gone\].*/\1/g' | xargs git branch -D
 ```
 
+## Delete all branches except current one
+```
+git branch | grep -v $(git rev-parse --abbrev-ref HEAD) | xargs git branch -D
+```
+
 ## Prefix commits with JIRA ticket id
 ```
 # Put this in the commit-msg hook
