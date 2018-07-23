@@ -13,7 +13,7 @@ git branch | grep -v $(git rev-parse --abbrev-ref HEAD) | xargs git branch -D
 ```
 
 ## Prefix commits with JIRA ticket id
-Must have branch name with XX-#### in it.
+Must have branch name with `XX-####` in it. E.G. `tsp/TX-1234/adding-tests`, `tsp/TX-1234`
 ```
 # Put this in the commit-msg hook
 # If commit message is a fixup message, ignore it.
