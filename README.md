@@ -1,3 +1,16 @@
+## Swift functions to get object address
+```swift
+func addressOf(_ o: UnsafeRawPointer) -> String {
+    let addr = unsafeBitCast(o, to: Int.self)
+    return String(format: "%p", addr)
+}
+
+func addressOf<T: AnyObject>(_ o: T) -> String {
+    let addr = unsafeBitCast(o, to: Int.self)
+    return String(format: "%p", addr)
+}
+```
+
 ## Unhide hidden files
 ```
 ```
