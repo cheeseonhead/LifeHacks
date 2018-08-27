@@ -1,3 +1,12 @@
+## Using Swift Beta for Swift Package Manager
+<details>
+New swift tools comes installed when Xcode-Beta are installed. In order to use the beta swift is just a matter of switching the xcode you are using.
+    
+```bash
+sudo xcode-select -s <Path-to-App>/Xcode-beta.app
+```
+</details>
+
 ## Swift functions to get object address
 ```swift
 func addressOf(_ o: UnsafeRawPointer) -> String {
@@ -43,22 +52,14 @@ fi
 ```
 
 ## Stop tracking a remote branch without deleting
-You don't have to delete your local branch.
 
 Simply delete your remote tracking branch:
 
 ```git branch -d -r origin/<remote branch name>```
 (This will not delete the branch on the remote repo!)
 
-See "Having a hard time understanding git-fetch"
-
-there's no such concept of local tracking branches, only remote tracking branches.
-So origin/master is a remote tracking branch for master in the origin repo
-
-As mentioned in Dobes Vandermeer's answer, you also need to reset the configuration associated to the local branch:
+You also need to reset the configuration associated to the local branch:
 
 ```git config --unset branch.<branch>.remote```
 
 ```git config --unset branch.<branch>.merge```
-
-That will make any push/pull completely unaware of origin/<remote branch name>.
