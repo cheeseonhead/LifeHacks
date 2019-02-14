@@ -1,20 +1,17 @@
+## Workspace frameworks work in only simulator or device
+Probably because not building for certain architecture, set `BUILD ACTIVE ARCHITECTURE ONLY` to `NO` in the build settings and try it.
+
 ## Stop Adobe creative cloud from launching at startup
-<details>
-    
 ```
 launchctl unload -w /Library/LaunchAgents/com.adobe.AdobeCreativeCloud.plist
 ```
 
-</details>
-
 ## Using Swift Beta for Swift Package Manager
-<details>
 New swift tools comes installed when Xcode-Beta are installed. In order to use the beta swift is just a matter of switching the xcode you are using.
     
 ```bash
 sudo xcode-select -s <Path-to-App>/Xcode-beta.app
 ```
-</details>
 
 ## Swift functions to get object address
 ```swift
@@ -31,6 +28,7 @@ func addressOf<T: AnyObject>(_ o: T) -> String {
 
 ## Unhide hidden files
 ```
+CMD + SHIFT + .
 ```
 
 ## Delete branches that don't exist on origin anymore
