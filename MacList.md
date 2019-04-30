@@ -1,6 +1,6 @@
 - Clean My Mac
 - iStat Menus
-- Afred 3
+- Bartender
 - iTerm
   - Oh my zsh
 - SourceTree
@@ -10,3 +10,4 @@
 - Disk Inventory X
 - Spectacle 
 - Unarchiver
+- Paste
