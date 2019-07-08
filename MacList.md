@@ -1,13 +1,36 @@
-- Clean My Mac
-- iStat Menus
-- Bartender
-- iTerm
-  - Oh my zsh
-- SourceTree
-- XCode
-- Visual Studio Code
-- AppCode
-- Disk Inventory X
-- Spectacle 
-- Unarchiver
-- Paste
+- Apps
+  - Clean My Mac
+  - iStat Menus
+  - Bartender
+  - iTerm
+    - Oh my zsh
+    - presto
+  - SourceTree
+  - XCode
+  - Visual Studio Code
+  - AppCode
+  - Disk Inventory X
+  - Spectacle 
+  - Unarchiver
+  - Paste
+- Hotkeys
+  - CMD+Q - Move Space Left
+  - CMD+W - Move space right
+  - CMD+A - Expose
+  - CMD+2 - Mission Control
+  - CMD+Shift+D - Show desktop
+  - CMD+Space - Change input
+  - Alt+Space - Spotlight
+  - fn+Space - Siri
+- Settings
+  - Hot corner - down left lock computer
+  - Mission Control
+    - Group windows by app
+    - Disable auto arrange
+  - Trackpad
+    - Speed - 5th from slow
+    - Expose - 4 fingers down
+  - Accessbility
+    - Pointer Control - Enable 3 finger drag
+    - Siri - Type to siri
+    
